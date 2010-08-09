@@ -10,11 +10,13 @@ JSON backend for ooc compilers
 ==============================
 
    + Motivation
+   + Specification
+   + References and footnotes
 
 Motivation
 ----------
 
-Some people (like me) would be very pleased to be able to use ooc code from other languages
+Some people would be very pleased to be able to use ooc code from other languages
 like Python. However, this would require writing bindings, and nobody likes writing bindings.
 To simplify this process, it would be nice if the ooc compiler could give information about
 the API of ooc modules as well as information what the generated C code looks like, so that
