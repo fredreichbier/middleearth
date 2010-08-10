@@ -1,7 +1,7 @@
 
 Author:  Friedrich Weber (fredreichbier)  
 Created: 2010-08-09  
-Updated: 2010-08-09  
+Updated: 2010-08-10  
 Type:    Extension  
 Status:  Draft  
 Fixes:   None  
