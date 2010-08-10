@@ -173,7 +173,8 @@ Example:
  + `tag`: The name of the function, without modifiers.
  + `type`
  + `doc`
- + `unmangled`
+ + `unmangled` (boolean or string): Either `true` (if it's an unmangled function, but has no name
+   specified), or a string containing the specified unmangled name, or `false`.
  + `name` (string): Although the name is identical to the tag, it contains the name of the function.
     It also contains the suffix (if given), separated by a "~" char, but no whitespace.
     So, a `doSomething: func ~string` would have the name `"doSomething~string"`.
@@ -184,6 +185,8 @@ Example:
    containing the extern name of the function (if it's an extern function with a name), or `false`.
  + `returnType` (null or string): Either the return value tag or null if the function has no return type.
  + `arguments` (array of arrays): A list of three-element lists consisting of `[name, argument tag, modifiers or null]`.
+ + `isThisRef` (boolean): A boolean that describes if the method is a `func@` (the `this` argument is passed
+    by reference). Only relevant for methods, it's always `false` for functions.
 
 If a function has varargs, the last argument is named `"..."` with the type `""` (empty string).
 
@@ -202,7 +205,8 @@ is the method's name including the suffix.
  + `type`
  + `doc`
  + `name`
- + `unmangled`
+ + `unmangled` (boolean or string): Either `true` (if it's an unmangled global variable, but has no name
+   specified), or a string containing the specified unmangled name, or `false`. For fields, this is always `false`.
  + `modifiers` (array of strings): a (possibly empty) list of modifiers. Possible modifiers: `const`, `static`.
  + `value` (string): the variable value (if known, e.g. for constants), otherwise null.
  + `varType` (string): the tag of the variable type.
