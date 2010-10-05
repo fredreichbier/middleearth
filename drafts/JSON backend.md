@@ -1,7 +1,7 @@
 
 Author:  Friedrich Weber (fredreichbier)  
 Created: 2010-08-09  
-Updated: 2010-08-10  
+Updated: 2010-10-05  
 Type:    Extension  
 Status:  Draft  
 Fixes:   None  
@@ -188,7 +188,9 @@ Example:
  + `isThisRef` (boolean): A boolean that describes if the method is a `func@` (the `this` argument is passed
     by reference). Only relevant for methods, it's always `false` for functions.
 
-If a function has varargs, the last argument is named `"..."` with the type `""` (empty string).
+In case the function has varargs:
+ + for C varargs, the last argument is named `"..."` with the type `"..."`.
+ + for ooc varargs, the last argument's name is copied, the type is `"..."`.
 
 #### method ####
 
