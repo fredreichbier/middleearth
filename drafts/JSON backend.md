@@ -189,6 +189,7 @@ Example:
     by reference). Only relevant for methods, it's always `false` for functions.
 
 In case the function has varargs:
+
  + for C varargs, the last argument is named `"..."` with the type `"..."`.
  + for ooc varargs, the last argument's name is copied, the type is `"..."`.
 
